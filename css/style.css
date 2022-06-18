@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: row;
     height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #address_container,
@@ -54,4 +55,118 @@
     font-weight: bold;
     margin-bottom: 50px;
     font-size: 18px;
+}
+
+/*FORMULÁRIO*/
+
+#form_container {
+    padding-top: 60px;
+    text-align: center;
+}
+
+#form_container h2 {
+    color: #888;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#contact_form {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#contact_form input,
+#contact_form textarea,
+#contact_form label {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #DDD;
+    color: #AAA;
+}
+
+#contact_form input {
+    margin-bottom: 15px;
+}
+
+#contact_form input::placeholder,
+#contact_form textarea::placeholder {
+    color: #BBB;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact_form label {
+    border: none;
+    color: #999;
+    font-weight: bold;
+}
+
+#contact_form input[type="submit"] {
+    background-color: #00AD5E;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px auto;
+    width: 300px;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+
+#contact_form input[type="submit"]:hover {
+    background-color: #FFF;
+    color: #00AD5E;
+    border-color: #00AD5E;
+}
+
+/*RESPONSIVIDADE*/
+
+@media(max-width: 450px) {
+
+    #main_container {
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    #form_container,
+    #address_container {
+        flex: 1 1 100%;
+    }
+
+    #form_container h2 {
+        margin-bottom: 25px;
+        font-size: 30.5px;
+    }
+
+    #form_container {
+        order: -1;
+        padding: 20px;
+    }
+
+    #contact_form {
+        width: 90%;
+    }
+
+    #contact_form input,
+    #contact_form textarea,
+    #contact_form label {
+        border-color: #AAA;
+        width: 90%;
+    }
+
+    #address_container {
+        background-position: 0;
+        height: 500px;
+    }
+
+    .fade {
+        opacity: .9;
+    }
+
+    #address_content {
+        top: 25%;
+        left: 25%;
+    }
 }
