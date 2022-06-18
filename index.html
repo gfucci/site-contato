@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Página de contato</title>
+</head>
+<body>
+    <div id="main_container">
+        <!--INFORMAÇÕES DE ENDEREÇO-->
+        <div id="address_container">
+            <div class="fade"></div>
+            <div id="address_content">
+                <h2>
+                    <ion-icon name="navigate-outline"></ion-icon> 
+                    Endereço
+                </h2>
+                <p>Rua Flores, 133</p>
+                <h2>
+                    <ion-icon name="call-outline"></ion-icon>
+                    Telefone
+                </h2>
+                <p>48 9999-9999</p>
+                <h2>
+                    <ion-icon name="mail-outline"></ion-icon> 
+                    E-mail
+                </h2>
+                <p>email@email.com</p>
+            </div>
+        </div>
+        <!--FORMULÁRIO-->
+        <div id="form_container">
+            <form id="contact_form">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome">
+                <label for="phone">Telefone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Digite seu telefone">
+                <label for="email">Nome:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                <label for="name">Mensagem:</label>
+                <textarea name="msg" id="msg" placeholder="Como podemos te ajudar?"></textarea>
+                <input type="submit" value="Enviar mensagem">
+            </form>
+        </div>
+    </div>  
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
